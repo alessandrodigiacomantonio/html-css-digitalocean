@@ -4,3 +4,26 @@
   padding: 0;
   max-width: 1170px;
 }
+
+nav#navbar a {
+  text-transform: capitalize;
+  line-height: 50px;
+  vertical-align: middle;
+}
+#navbar img {
+  height: 40px;
+}
+
+
+/* media queries */
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
