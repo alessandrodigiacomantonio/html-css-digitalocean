@@ -1,10 +1,24 @@
+/* regole generiche */
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 1170px;
 }
 
+.color_white {
+  color: #fff;
+}
+
+.bg_white {
+  background-color: #fff;
+}
+
+a {
+  color: #0069ff;
+}
+
+/* navbar */
 nav#navbar a {
   text-transform: capitalize;
   line-height: 50px;
@@ -13,8 +27,20 @@ nav#navbar a {
 #navbar img {
   height: 40px;
 }
+#navbar #nav_menu {
+  display: none;
+}
+#navbar #nav_form li:not(:last-child) {
+  display: none;
+}
+#navbar #nav_form a.sign_up {
+  line-height: 20px;
+}
 
-
+/* jumbotron */
+#jumbo_form h2.get_started {
+  color: #0069ff;
+}
 /* media queries */
 @media screen and (min-width: 768px) {
 
@@ -25,5 +51,14 @@ nav#navbar a {
 }
 
 @media screen and (min-width: 1200px) {
+  #navbar #nav_menu {
+    display: inline-block;
+  }
+  #navbar #nav_form li:not(:last-child) {
+    display: inline-block;
+  }
+  #navbar #nav_form li:last-child {
+    display: none;
+  }
 
 }
