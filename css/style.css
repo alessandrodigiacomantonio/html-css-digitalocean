@@ -70,8 +70,8 @@ nav#navbar a {
 
 /* jumbotron */
 #jumbo {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,6 +118,37 @@ nav#navbar a {
   top: 50%;
   left: 1%;
   transform: translatey(-50%);
+}
+
+/* corpo del testo */
+section[id] {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* main: sezione #brands */
+section#brands {
+  background-color: #f9f9f9;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+#brands .brands_container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#brands h3 {
+  margin-top: 0;
+  color: #6f7b97;
+  font-size: 1.5rem;
+}
+#brands img {
+  height: 100px;
+  max-width: 100%;
+}
+#brands .splunk {
+  line-height: 100px;
+}
+#brands .splunk img {
+  height: 50px;
 }
 /* media queries */
 @media screen and (min-width: 768px) {
