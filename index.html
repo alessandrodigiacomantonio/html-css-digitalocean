@@ -15,12 +15,15 @@
 <body>
   <!-- testata -->
   <header>
+    <!-- Header: #navbar -->
     <nav id="navbar">
       <div class="container">
         <div class="row">
+          <!-- Header: div #logo, parte sinistra della #navbar -->
           <div id="logo" class="col-xs-6 col-lg-3">
             <a href="#"><img src="img/logo.png" alt="logo" title="Digital Ocean"></a>
           </div>
+          <!-- Header: div #nav_menu, parte centrale edlla #navbar -->
           <div id="nav_menu" class="col-lg-5 visible-lg-inline-block text-right">
             <ul class="list-unstyled list-inline">
               <li><a href="">products<i class="glyphicon glyphicon-menu-down"></i></a></li>
@@ -29,6 +32,7 @@
               <li><a href="">pricing</a></li>
             </ul>
           </div>
+          <!-- Header: div #nav_form, parte destra della #navbar -->
           <div id="nav_form" class="col-xs-6 col-lg-4 text-right">
             <ul class="list-unstyled list-inline">
               <li><a href="">Docs</a></li>
@@ -41,19 +45,25 @@
         </div>
       </div>
     </nav>
+    <!-- /Header: #navbar -->
+
+    <!-- Header: div #jumbo -->
     <div id="jumbo">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-7 col-lg-6">
+            <!-- Header: div #jumbo_txt, parte sinistra del jumbotron -->
             <div id="jumbo_txt" class="color_white">
               <h1 class="bold">
                 The simplest cloud platform for developers &amp; teams
               </h1>
-              <p>
+              <p class="color_white">
                 Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, wheather you're running one virtual machine or ten thousand.
               </p>
             </div>
+            <!-- /Header: div #jumbo_txt, parte sinistra del jumbotron -->
           </div>
+          <!-- header: div #jumbo_form, parte destra del jumbotron-->
           <div class="bg_white radius_5 col-xs-12 col-md-5 col-lg-6">
             <div id="jumbo_form" class="text-center">
               <h2 class="bold">Deploy your app in seconds.</h2>
@@ -62,6 +72,7 @@
               <input type="password" class="form-control" placeholder="Password" name="password">
               <a id="btn_create_account" class="btn_width_100 radius_5 btn btn-primary" role="button" href="">Create your account</a>
               <a id="btn_signup_google" class="btn_width_100 radius_5 btn btn-default" href="" role="button">
+                <!-- icona colorata di google -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" class="icon_google">
                   <title>Google</title>
                   <g fill="none" fill-rule="evenodd">
@@ -71,24 +82,29 @@
                     <path fill="#EA4335" d="M9 3.5795c1.3214 0 2.5077.4541 3.4405 1.346l2.5813-2.5814C13.4632.8918 11.426 0 9 0 5.4818 0 2.4382 2.0168.9573 4.9582L3.964 7.29C4.6718 5.1627 6.6559 3.5795 9 3.5795z"></path>
                   </g>
                 </svg>
+                <!-- /icona colorata di google -->
                 Sign up with google
               </a>
               <p>By signing up you agree to the <a href=""><u>Terms of service.</u></a></p>
             </div>
+            <!-- /header: div #jumbo_form, parte destra del jumbotron -->
           </div>
         </div>
       </div>
     </div>
+    <!-- /Header: div #jumbo -->
   </header>
   <!-- /testata -->
 
   <!-- corpo del documento -->
   <main>
+    <!-- main: sezione #brands -->
     <section id="brands" class="text-center">
       <h3 class="text-uppercase">innovative businesses trust digitalocen</h3>
       <div class="brands_container">
         <div class="container">
           <div class="row">
+            <!-- Main: sezione #brands, elenco dei brands -->
             <div class="col-xs-6 col-md-2">
               <div class="brands_img_box">
                 <img src="https://www.digitalocean.com/assets/media/homepage/logos/docker-bab60eeb.png" alt="docker">
@@ -119,21 +135,96 @@
                 <img src="https://www.digitalocean.com/assets/media/homepage/logos/splunk-06b17d75.png" alt="splunk">
               </div>
             </div>
+            <!-- /Main: sezione #brands, elenco dei brands -->
           </div>
         </div>
       </div>
       <p><a href="">View customer stories &gt;</a></p>
     </section>
-    <section id="deploy">
-      <h2></h2>
-      <p></p>
+    <!-- /main: sezione #brands -->
+
+    <!-- main: sezione #deploy -->
+    <section id="deploy" class="text-center">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-4"></div>
-          <div class="col-xs-12 col-md-8"></div>
+          <div class="col-xs-12">
+            <h2>Deploy and scale seamlessly</h2>
+          </div>
+          <div class="col-xs-12">
+            <p class="deploy_paragraph">
+              Our optimized configuration process asaves your team time when running and scaling distributed applications, AI &amp; machine learning workloads, hosted services, client websites, or CI/CS environments.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-4 text-center">
+              <div class="deploy_menu">
+                <button class="" type="button">Deploy</button>
+                <button class="" type="button">Manage</button>
+                <button class="" type="button">Secure</button>
+                <button class="" type="button">Scale</button>
+                <button class="" type="button">Monitor</button>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-8 text-left">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="deploy_box">
+                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 41 41" width="41" height="41"><defs><linearGradient id="a" x1="50%" y1="93.571%" x2="50%" y2="-0.778%"><stop stop-color="#0069ff" stop-opacity="0.25" offset="0%" /><stop stop-color="#0069ff" stop-opacity="0" offset="100%" /></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#a)" fill-rule="nonzero" transform="translate(2 1)" d="M 2.8 0.6 h 31.4 v 35.6 H 2.8 Z" /><g stroke-width="2"><path opacity="0.3" stroke="#0069ff" d="M 5.7 5.7 l 29.6 29.6 M 5.7 35.3 L 35.3 5.7" /><path fill="#ffffff" fill-rule="nonzero" stroke="#120078" d="M 2.1 36.2 c 0 -2.7 3.6 -5.3 3.6 -5.3 s 3.6 2.7 3.6 5.3 c 0 2 -1.6 3.6 -3.6 3.6 s -3.6 -1.6 -3.6 -3.6 Z M 31.8 36.2 c 0 -2.7 3.6 -5.3 3.6 -5.3 s 3.6 2.7 3.6 5.3 c 0 2 -1.6 3.6 -3.6 3.6 s -3.6 -1.6 -3.6 -3.6 Z M 2.1 6.5 c 0 -2.7 3.6 -5.3 3.6 -5.3 s 3.6 2.7 3.6 5.3 c 0 2 -1.6 3.6 -3.6 3.6 S 2.1 8.5 2.1 6.5 Z M 31.8 6.5 c 0 -2.7 3.6 -5.3 3.6 -5.3 S 39 3.9 39 6.5 c 0 2 -1.6 3.6 -3.6 3.6 s -3.6 -1.6 -3.6 -3.6 Z" /><path fill="#ffffff" fill-rule="nonzero" stroke="#0069ff" d="M 14.5 21.9 c 0 -4.5 6 -8.9 6 -8.9 s 6 4.5 6 8.9 c 0 3.3 -2.7 6 -6 6 s -6 -2.7 -6 -6 Z" /></g></g></svg>
+                      <h3>
+                        Cluster deployments
+                      </h3>
+                      <p>
+                        Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="deploy_box">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" aria-hidden="true" class="www-Icon www-Icon--xlarge"><defs><linearGradient id="aopti" x1="50.055%" x2="50.055%" y1="2.475%" y2="96.438%"><stop offset="0%" stop-color="#0069FF" stop-opacity=".3"></stop><stop offset="100%" stop-color="#0069FF" stop-opacity="0"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path stroke="#0069FF" stroke-width="2" d="M3 11.121v18.108l17.271 10.028L37.45 29.229V11.121L20.271 1.186z" opacity=".2"></path><path fill="url(#aopti)" fill-rule="nonzero" d="M0 22.936v5.293l17.271 10.028L34.45 28.229v-5.293L17.271 13z" transform="translate(3 1)"></path><path stroke="#0069FF" stroke-width="2" d="M3 23.936v5.293l17.271 10.028L37.45 29.229v-5.293L20.271 14z"></path><path stroke="#0069FF" stroke-width="2" d="M3 23.936l17.271 9.935 17.179-9.935"></path><path fill="#FFF" fill-rule="nonzero" stroke="#120078" stroke-width="2" d="M20.2714 7.7786S12.5643 13.4429 12.5643 19.2c0 4.2714 3.4357 7.7071 7.7071 7.7071 4.2715 0 7.7072-3.4357 7.7072-7.7071 0-5.5714-7.7072-11.4214-7.7072-11.4214z"></path><path stroke="#0069FF" stroke-width="2" d="M3 11.4l17.271 9.936L37.45 11.4" opacity=".2"></path></g></svg>
+                      <h3>
+                        Optimized computer
+                      </h3>
+                      <p>
+                        Get the compute resources you need with Standard or Optimized Droplets.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="deploy_box">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" aria-hidden="true" class="www-Icon www-Icon--xlarge"><defs><linearGradient x1="11.123%" y1="109.271%" x2="80.386%" y2="3.434%" id="aprebu"><stop stop-color="#0069FF" stop-opacity=".6" offset="0%"></stop><stop stop-color="#0069FF" stop-opacity="0" offset="100%"></stop></linearGradient><linearGradient x1="11.231%" y1="109.543%" x2="80.289%" y2="3.243%" id="bprebu"><stop stop-color="#0069FF" stop-opacity=".6" offset="0%"></stop><stop stop-color="#0069FF" stop-opacity="0" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#aprebu)" fill-rule="nonzero" opacity=".3" d="M24.93 12.96V.9H8.73v12.06z" transform="translate(3.5 2)"></path><path stroke="#0069FF" stroke-width="2" opacity=".3" d="M28.414 2.876v12.06h-16.2V2.876z"></path><path fill="#FFFFFF" fill-rule="nonzero" d="M32.59 7.593v18.09H8.11V7.593z"></path><path fill="url(#bprebu)" fill-rule="nonzero" d="M29.07 23.76V5.67H4.59v18.09z" transform="translate(3.5 2)"></path><path stroke="#0069FF" stroke-width="2" d="M32.59 7.593v18.09H8.11V7.593z"></path><path stroke="#120078" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" d="M3.522 37.985v-25.2h33.66v25.2z"></path><g stroke="#120078" stroke-width="2"><path d="M20.33 20.81v9.09M15.74 25.4h9.18"></path></g></g></svg>
+                      <h3>
+                        One-click apps
+                      </h3>
+                      <p>
+                        Skip the install and configuration process with pre-built open Rails, Cassandra, Docker, and more.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="deploy_box">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" aria-hidden="true" class="www-Icon www-Icon--xlarge"><defs><linearGradient x1="49.963%" y1="1.851%" x2="49.963%" y2="99.243%" id="a"><stop stop-color="#0069FF" stop-opacity=".3" offset="0%"></stop><stop stop-color="#0069FF" stop-opacity="0" offset="100%"></stop></linearGradient></defs><g transform="translate(4.3 1)" fill="none" fill-rule="evenodd"><circle fill="url(#a)" fill-rule="nonzero" cx="16.185" cy="22.815" r="16.185"></circle><ellipse fill="#FFFFFF" fill-rule="nonzero" cx="16.185" cy="22.815" rx="16.185" ry="6.143"></ellipse><path d="M0 22.815c0-3.413 7.215-6.143 16.185-6.143 8.97 0 16.185 2.73 16.185 6.143" stroke="#0069FF" stroke-width="2" opacity=".4"></path><path d="M16.185 39c-3.412 0-6.142-7.215-6.142-16.185 0-8.97 2.73-16.185 6.142-16.185" stroke="#0069FF" stroke-width="2" opacity=".4"></path><path d="M32.37 22.815c0 3.412-7.215 6.142-16.185 6.142C7.215 28.957 0 26.227 0 22.816" stroke="#0069FF" stroke-width="2"></path><path d="M16.185 6.63c3.413 0 6.143 7.215 6.143 16.185 0 8.97-2.73 16.185-6.143 16.185" stroke="#0069FF" stroke-width="2"></path><circle stroke="#0069FF" stroke-width="2" cx="16.185" cy="22.815" r="16.185"></circle><g transform="translate(8.775)" stroke="#120078" stroke-width="2"><path d="M14.332 6.923c0 5.167-6.922 10.237-6.922 10.237S.487 11.895.487 6.922C.487 3.12 3.607 0 7.41 0s6.922 3.12 6.922 6.923z" fill="#FFFFFF" fill-rule="nonzero"></path><circle cx="7.41" cy="7.02" r="2.34"></circle></g></g></svg>
+                      <h3>
+                        Global availability
+                      </h3>
+                      <p>
+                        Deploy to any of our data center regions around the world.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- /main: sezione #deploy -->
+
     <section id="designed">
       <h2></h2>
       <p></p>
