@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!-- Bootstrap v3.3.7 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Google fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- Foglio di stile principale -->
   <link rel="stylesheet" href="css/style.css">
   <title>Digital Ocean</title>
 </head>
@@ -18,7 +21,7 @@
           <div id="logo" class="col-xs-6 col-lg-3">
             <a href="#"><img src="img/logo.png" alt="logo" title="Digital Ocean"></a>
           </div>
-          <div id="nav_menu" class="col-lg-5 text-right">
+          <div id="nav_menu" class="col-lg-5 visible-lg-inline-block text-right">
             <ul class="list-unstyled list-inline">
               <li><a href="">products<i class="glyphicon glyphicon-menu-down"></i></a></li>
               <li><a href="">customers</a></li>
@@ -31,28 +34,49 @@
               <li><a href="">Docs</a></li>
               <li><a href="">support<i class="glyphicon glyphicon-menu-down"></i></a></li>
               <li><a href="">Login</a></li>
-              <li><a class="btn btn-default sign_up"href="">sign up</a></li>
-              <li><a href=""><i>hamburger</i></a></li>
+              <li><a class="btn btn-default sign_up" href="" role="button">sign up</a></li>
+              <li><a href=""><i id="hamburger" class="glyphicon glyphicon-menu-hamburger"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
     <div id="jumbo">
-      <div class="jumbo_txt color_white col-xs-12 col-md-7 col-lg-6">
-        <h1>
-          The simplest cloud platform for developers &amp; teams
-        </h1>
-        <p>
-          Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, wheather you're running one virtual machine or ten thousand.
-        </p>
-      </div>
-      <div class="jumbo_form bg_white col-xs-12 col-md-5 col-lg-6">
-        <h2>Deploy your app in seconds.</h2>
-        <h2 class="get_started">Get started now.</h2>
-        <input type="email" class="form-control" placeholder="Email" name="email">
-        <input type="password" class="form-control" placeholder="Password" name="password">
-        <button></button>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-7 col-lg-6">
+            <div id="jumbo_txt" class="color_white">
+              <h1 class="bold">
+                The simplest cloud platform for developers &amp; teams
+              </h1>
+              <p>
+                Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, wheather you're running one virtual machine or ten thousand.
+              </p>
+            </div>
+          </div>
+          <div class="bg_white radius_5 col-xs-12 col-md-5 col-lg-6">
+            <div id="jumbo_form" class="text-center">
+              <h2 class="bold">Deploy your app in seconds.</h2>
+              <h2 class="get_started bold">Get started now.</h2>
+              <input type="email" class="form-control" placeholder="Email" name="email">
+              <input type="password" class="form-control" placeholder="Password" name="password">
+              <a id="btn_create_account" class="btn_width_100 radius_5 btn btn-primary" role="button" href="">Create your account</a>
+              <a id="btn_signup_google" class="btn_width_100 radius_5 btn btn-default" href="" role="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" class="icon_google">
+                  <title>Google</title>
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#4285F4" d="M17.64 9.2045c0-.6381-.0573-1.2518-.1636-1.8409H9v3.4814h4.8436c-.2086 1.125-.8427 2.0782-1.7959 2.7164v2.2581h2.9087c1.7018-1.5668 2.6836-3.874 2.6836-6.615z"></path>
+                    <path fill="#34A853" d="M9 18c2.43 0 4.4673-.806 5.9564-2.1805l-2.9087-2.2581c-.8059.54-1.8368.859-3.0477.859-2.344 0-4.3282-1.5831-5.036-3.7104H.9574v2.3318C2.4382 15.9832 5.4818 18 9 18z"></path>
+                    <path fill="#FBBC05" d="M3.964 10.71c-.18-.54-.2822-1.1168-.2822-1.71s.1023-1.17.2823-1.71V4.9582H.9573A8.9965 8.9965 0 0 0 0 9c0 1.4523.3477 2.8268.9573 4.0418L3.964 10.71z"></path>
+                    <path fill="#EA4335" d="M9 3.5795c1.3214 0 2.5077.4541 3.4405 1.346l2.5813-2.5814C13.4632.8918 11.426 0 9 0 5.4818 0 2.4382 2.0168.9573 4.9582L3.964 7.29C4.6718 5.1627 6.6559 3.5795 9 3.5795z"></path>
+                  </g>
+                </svg>
+                Sign up with google
+              </a>
+              <p>By signing up you agree to the <a href=""><u>Terms of service.</u></a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>

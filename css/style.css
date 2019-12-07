@@ -3,7 +3,10 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  max-width: 1170px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .color_white {
@@ -14,8 +17,19 @@
   background-color: #fff;
 }
 
+.btn_width_100 {
+  width: 100%;
+}
+
+.radius_5 {
+  border-radius: 5px;
+}
+.bold {
+  font-weight: 700;
+}
+
 a {
-  color: #0069ff;
+  color: #076eff;
 }
 
 /* navbar */
@@ -23,23 +37,87 @@ nav#navbar a {
   text-transform: capitalize;
   line-height: 50px;
   vertical-align: middle;
+  color: #0c2354;
+  text-decoration: none;
+}
+#navbar li:hover a,
+#navbar li:hover i {
+  color: #076eff;
+}
+#navbar i {
+  font-size: 1rem;
+}
+#navbar #hamburger {
+  color: #076eff;
+  font-size: 2em;
+  line-height: 50px;
+  vertical-align: middle;
 }
 #navbar img {
   height: 40px;
 }
-#navbar #nav_menu {
+/* #navbar #nav_menu {
   display: none;
-}
+} */
 #navbar #nav_form li:not(:last-child) {
   display: none;
 }
 #navbar #nav_form a.sign_up {
   line-height: 20px;
+  color: #237dff;
+  border-color: #237dff;
 }
 
 /* jumbotron */
+#jumbo {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+}
+#jumbo_txt h1 {
+  font-size: 5.5rem;
+}
+#jumbo_txt p {
+  font-size: 2rem;
+}
+#jumbo_form {
+  padding: 20px 20px;
+}
+#jumbo_form > * {
+  margin-bottom: 10px;
+}
+
 #jumbo_form h2.get_started {
-  color: #0069ff;
+  color: #0d71ff;
+  margin-top: 10px;
+}
+#jumbo_form a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#jumbo_form #btn_create_account {
+  background-color: #579aff;
+  border: none;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+#jumbo_form #btn_create_account:hover {
+  background-color: #0069ff;
+}
+#jumbo_form #btn_signup_google {
+  position: relative;
+  border: none;
+  box-shadow: 2px 2px 3px 0px #e7e6e6;
+}
+#jumbo_form .icon_google {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translatey(-50%);
 }
 /* media queries */
 @media screen and (min-width: 768px) {
@@ -51,14 +129,12 @@ nav#navbar a {
 }
 
 @media screen and (min-width: 1200px) {
-  #navbar #nav_menu {
-    display: inline-block;
-  }
   #navbar #nav_form li:not(:last-child) {
     display: inline-block;
   }
   #navbar #nav_form li:last-child {
     display: none;
   }
+  #
 
 }
