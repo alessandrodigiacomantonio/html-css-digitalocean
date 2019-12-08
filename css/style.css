@@ -90,6 +90,11 @@ a:focus {
 #sharky:hover + .sharky_vignetta {
   opacity: 1;
 }
+.sharky_vignetta i.glyphicon.glyphicon-triangle-right {
+  left: 285px;
+  top: -24px;
+  color: #fff;
+}
 @keyframes ruotare {
   from {
     transform: scale(1.0) rotate(0deg);
