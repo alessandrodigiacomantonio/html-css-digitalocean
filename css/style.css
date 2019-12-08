@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .color_white {
@@ -292,7 +292,6 @@ section#development {
   background-color: #f3f5f9;
 }
 #development .development_box {
-  background-color: #fff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -312,6 +311,16 @@ section#development {
 }
 #development .fa-circle {
   color: #237dff;
+}
+
+/* Footer: sezione #get_started */
+section#get_started {
+  background: linear-gradient(180deg, rgba(0,35,158,1) 0%, rgba(0,72,198,1) 100%);
+}
+#get_started .btn_create_account {
+  color: #006aff;
+  margin-top: 20px;
+  padding: 12px;
 }
 /* media queries */
 
