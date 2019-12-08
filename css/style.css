@@ -256,6 +256,33 @@ section#features .row > * {
 #features p {
   font-size: 1.5rem;
 }
+
+/* main: sezione #service */
+section#service {
+  background: linear-gradient(180deg, rgba(0,35,158,1) 0%, rgba(0,72,198,1) 100%);
+}
+#service .service_block:first-child {
+  margin-bottom: 50px;
+}
+#service .sub_row {
+  border-bottom: 1px solid #fff;
+  padding-top: 10px;
+}
+#service h2,
+#service h3 {
+  color: #fff;
+}
+#service h3 {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+#service p {
+  font-size: 1.1rem;
+  color: #90a8de;
+}
+#service a {
+  color: #00d0d1;
+}
 /* media queries */
 @media screen and (min-width: 768px) {
 
@@ -278,6 +305,8 @@ section#features .row > * {
   #navbar #nav_form li:last-child {
     display: none;
   }
-  #
+  #service .service_block:first-child {
+    margin-bottom: 0;
+  }
 
 }
