@@ -31,6 +31,9 @@ body {
 .pos_rel {
   position: relative;
 }
+.pos_abs {
+  position: absolute;
+}
 .pos_fixed {
   position: fixed;
 }
@@ -44,6 +47,96 @@ a:focus {
   text-decoration: none;
 }
 
+/* sharky */
+#sharky {
+  height: 50px;
+  width: 50px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+  border-radius: 5px;
+  background: url(../img/sharky.png) center, #006aff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: ruotare 5s infinite;
+}
+#sharky span {
+  font-size: 1rem;
+  top: -8px;
+  right: -5px;
+  display: inline-block;
+  background-color: #f00;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+.sharky_vignetta {
+  opacity: 0;
+  font-size: 1.2rem;
+  color: #0d2554;
+  height: 50px;
+  width: 300px;
+  bottom: 20px;
+  right: 80px;
+  z-index: 3;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  animation: colori 15s infinite;
+}
+#sharky:hover + .sharky_vignetta {
+  opacity: 1;
+}
+@keyframes ruotare {
+  from {
+    transform: scale(1.0) rotate(0deg);
+  }
+  33% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  67% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  to {
+    transform: scale(1.0) rotate(0deg);
+  }
+}
+@keyframes colori {
+  0% {
+    color: #EE1C25;
+  }
+  10% {
+    color: #F3B019;
+  }
+  20% {
+    color: #F6EB15;
+  }
+  30% {
+    color: #077942;
+  }
+  40% {
+    color: #4E59A8;
+  }
+  50% {
+    color: #A960B1;
+  }
+  60% {
+    color: #4E59A8;
+  }
+  70% {
+    color: #077942;
+  }
+  80% {
+    color: #F6EB15;
+  }
+  90% {
+    color: #F3B019;
+  }
+  100% {
+    color: #EE1C25;
+  }
+}
 /* navbar */
 nav#navbar {
   top: 0;
