@@ -286,6 +286,33 @@ section#service {
 #service a {
   color: #00d0d1;
 }
+
+/* Main: sezione #development */
+section#development {
+  background-color: #f3f5f9;
+}
+#development .development_box {
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#development .development_box > * {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#development img {
+  width: 100%;
+}
+#development .circles {
+  margin-top: 30px;
+}
+#development i.pos_rel{
+  font-size: 3rem;
+  transform: translatey(700%);
+}
+#development .fa-circle {
+  color: #237dff;
+}
 /* media queries */
 
 @media screen and (min-width: 992px) {
@@ -295,6 +322,10 @@ section#service {
   #deploy .deploy_box {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  #development img {
+    height: 50px;
+    width:auto;
   }
 }
 
@@ -308,5 +339,4 @@ section#service {
   #service .service_block:first-child {
     margin-bottom: 0;
   }
-
 }
