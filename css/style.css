@@ -49,6 +49,12 @@ a:active,
 a:focus {
   text-decoration: none;
 }
+.calogero {
+  color: #031c4e;
+}
+.concetta {
+  color: #6f7b97;
+}
 
 /* sharky */
 #sharky {
@@ -154,6 +160,7 @@ nav#navbar {
   width: 100%;
   z-index: 3;
   background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 #navbar a {
   text-transform: capitalize;
@@ -398,7 +405,11 @@ section#service {
   color: #90a8de;
 }
 #service a {
+  font-size: 1.1rem;
   color: #00d0d1;
+}
+#service a:hover {
+  color: #00A6A7;
 }
 
 /* Main: sezione #development */
@@ -426,8 +437,12 @@ section#development {
   font-size: 3rem;
   transform: translatey(700%);
 }
+#development i.glyphicon::before {
+  cursor: pointer;
+}
 #development .fa-circle {
   color: #237dff;
+  cursor: pointer;
 }
 
 /* Footer: sezione #get_started */
