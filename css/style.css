@@ -9,7 +9,9 @@ body {
   font-family: 'Roboto', sans-serif;
   cursor: default;
 }
-
+.container {
+  max-width: 600px;
+}
 .color_white {
   color: #fff;
 }
@@ -405,6 +407,9 @@ section#development {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+#development h2 {
+  padding: 0 5px;
+}
 #development img {
   width: 100%;
 }
@@ -458,6 +463,9 @@ section#footer_info {
 /* media queries */
 
 @media screen and (min-width: 992px) {
+  .container {
+    max-width: 1170px;
+  }
   section#deploy .deploy_menu {
     display: inline-block;
   }
@@ -465,20 +473,20 @@ section#footer_info {
     padding-left: 10px;
     padding-right: 10px;
   }
-  #development img {
+  section#development img {
     height: 50px;
     width:auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #navbar #nav_form li:not(:last-child) {
+  section#navbar #nav_form li:not(:last-child) {
     display: inline-block;
   }
   #navbar #nav_form li:last-child {
     display: none;
   }
-  #service .service_block:first-child {
+  section#service .service_block:first-child {
     margin-bottom: 0;
   }
 }
