@@ -31,6 +31,9 @@ body {
 .pos_rel {
   position: relative;
 }
+.pos_fixed {
+  position: fixed;
+}
 
 a {
   color: #076eff;
@@ -42,7 +45,14 @@ a:focus {
 }
 
 /* navbar */
-nav#navbar a {
+nav#navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: #fff;
+}
+#navbar a {
   text-transform: capitalize;
   line-height: 50px;
   vertical-align: middle;
