@@ -8,6 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   cursor: default;
+  margin-top: 50px;
 }
 .container {
   max-width: 600px;
@@ -480,12 +481,12 @@ section#footer_info {
   }
   section#development img {
     height: 50px;
-    width:auto;
+    width: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  section#navbar #nav_form li:not(:last-child) {
+  #navbar #nav_form li:not(:last-child) {
     display: inline-block;
   }
   #navbar #nav_form li:last-child {
