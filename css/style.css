@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  cursor: default;
 }
 
 .color_white {
@@ -321,6 +322,33 @@ section#get_started {
   color: #006aff;
   margin-top: 20px;
   padding: 12px;
+}
+
+/* footer: sezione #footer_info */
+section#footer_info {
+  background-color: #010e28;
+}
+#footer_info a,
+#footer_info p:first-of-type {
+  color: rgba(255, 255, 255, 0.5);
+}
+#footer_info a:hover {
+  color: #fff;
+}
+#footer_info p {
+  margin: 10px 0 0;
+}
+#footer_info p:last-of-type {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.3);
+}
+#footer_info .social_icon {
+  margin-bottom: 20px;
+}
+#footer_info .footer_icon {
+  font-size: 1.8rem;
+  margin-right: 10px;
 }
 /* media queries */
 
