@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   cursor: default;
   margin-top: 50px;
-  min-width: 500px; 
+  min-width: 500px;
 }
 .container {
   max-width: 600px;
@@ -81,6 +81,7 @@ a:focus {
   padding: 2px 6px;
 }
 .sharky_vignetta {
+  /* display: none; */
   opacity: 0;
   font-size: 1.2rem;
   color: #0d2554;
@@ -96,6 +97,7 @@ a:focus {
   animation: colori 15s infinite;
 }
 #sharky:hover + .sharky_vignetta {
+  /* display: inline-block; */
   opacity: 1;
 }
 .sharky_vignetta i.glyphicon.glyphicon-triangle-right {
@@ -168,6 +170,7 @@ nav#navbar {
   line-height: 50px;
   vertical-align: middle;
   color: #0c2354;
+  font-weight: bold;
 }
 #navbar li:hover a,
 #navbar li:hover i {
@@ -175,6 +178,7 @@ nav#navbar {
 }
 #navbar i {
   font-size: 1rem;
+  font-weight: 700;
 }
 #navbar #hamburger {
   color: #076eff;
