@@ -81,7 +81,6 @@ a:focus {
   padding: 2px 6px;
 }
 .sharky_vignetta {
-  /* display: none; */
   opacity: 0;
   font-size: 1.2rem;
   color: #0d2554;
@@ -97,7 +96,6 @@ a:focus {
   animation: colori 15s infinite;
 }
 #sharky:hover + .sharky_vignetta {
-  /* display: inline-block; */
   opacity: 1;
 }
 .sharky_vignetta i.glyphicon.glyphicon-triangle-right {
@@ -189,9 +187,6 @@ nav#navbar {
 #navbar img {
   height: 40px;
 }
-/* #navbar #nav_menu {
-  display: none;
-} */
 #navbar #nav_form li:not(:last-child) {
   display: none;
 }
