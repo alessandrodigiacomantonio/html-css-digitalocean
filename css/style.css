@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   cursor: default;
   margin-top: 50px;
+  min-width: 500px; 
 }
 .container {
   max-width: 600px;
